@@ -566,11 +566,41 @@ if("South" == $roof_direction){
 
         }
         ?>
-        <script type="text/javascript">
 
-            var tax_credit=<?php echo wp_json_encode($arr1); ?>;
-//              var tax_credit_next=<?php echo wp_json_encode($arr11); ?>;
+
+<!--        <script type="text/javascript">-->
+<!---->
+<!--            var tax_credit=--><?php //echo wp_json_encode($arr1); ?>//;
+//            var tax_credit_next=<?php //echo wp_json_encode($arr11); ?>//;
+        <script type="text/javascript">
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+            function drawChart() {
+
+                var data = google.visualization.arrayToDataTable(tax_credit);
+                var data_next = google.visualization.arrayToDataTable(tax_credit_next);
+                var options = {
+                    title: '',
+                    legend: { position: 'none' },
+                    bar: { groupWidth: '100%' },
+                    isStacked: true,
+                    hAxis: {
+                        minValue: 0,
+                        ticks: [0, 1, 2, 3, 4,5,6,7,8,9,10],
+                        title: 'Year'
+                    },
+                    vAxis: {
+                        title: 'Dollars'
+                    }
+                };
+                var chart = new google.visualization.ColumnChart(document.getElementById('top_x_div'));
+                chart.draw(data, options);
+                var chart_next = new google.visualization.ColumnChart(document.getElementById('top_x_div_next'));
+                chart_next.draw(data_next, options);
+            }
         </script>
+
+
         <div style="text-align:center">
             <div id="top_x_div" style="margin:0 auto;"></div>
             <!-- <div id="top_x_div_next" style=" margin:0 auto;"></div> -->
