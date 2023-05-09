@@ -1968,7 +1968,7 @@ if("South" == $roof_direction){
             $ak_x_rdv = $annual_kwh*$roof_direction_value;
             $ak_sv_rdv = $annual_kwh + $ak_x_sv + $ak_x_rdv;
             $ak_sv_rdv_x_ov = $ak_sv_rdv*$offset_value;
-            $system_size_kwh = $ak_sv_rdv_x_ov/365/4.5/$d_rate_factor;
+            $system_size_kwh = $ak_sv_rdv_x_ov/365/4.5/$d_rate_factor;  //TODO difference here
             $round_to_two = round($system_size_kwh ,2);
         }else{
             $monthly_kwh =trim($_GET["monthly_kwh"]);
@@ -1980,7 +1980,7 @@ if("South" == $roof_direction){
             $ak_x_rdv = $annual_kwh*$roof_direction_value;
             $ak_sv_rdv = $annual_kwh + $ak_x_sv + $ak_x_rdv;
             $ak_sv_rdv_x_ov = $ak_sv_rdv*$offset_value;
-            $system_size_kwh = $ak_sv_rdv_x_ov/365/4.5/$coefficient_system_cost;
+            $system_size_kwh = $ak_sv_rdv_x_ov/365/4.5/$coefficient_system_cost; //TODO: difference here
             $round_to_two = round($system_size_kwh ,2);
         }
         
@@ -1989,7 +1989,7 @@ if("South" == $roof_direction){
             <?php
             echo "System Size ";
             echo "<br>";
-            echo "<p style='color:#2eaae1; margin-top: 14px; font-weight: 700;'>" .$round_to_two." ". "kW </p>";
+            echo "<p style='color:#2eaae1; margin-top: 14px; font-weight: 700;'>" .$round_to_two." ". "kW </p>"; 
             ?>
         </div>
         <?php
