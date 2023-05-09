@@ -571,8 +571,8 @@ class Front_Class
 
 <!--        <script type="text/javascript">-->
 <!---->
-<!--            var tax_credit=--><?php //echo wp_json_encode($arr1); ?>//;
-<!--//            var tax_credit_next=<?php //echo wp_json_encode($arr11); ?>//;-->
+<!--            var tax_credit=--><?php //echo wp_json_encode($arr1); ?>
+<!--            var tax_credit_next=<?php //echo wp_json_encode($arr11); ?>-->
         <script type="text/javascript">
             google.charts.load('current', {'packages':['corechart']});
             google.charts.setOnLoadCallback(drawChart);
@@ -638,7 +638,7 @@ class Front_Class
                 ?>
             </div>
             <div>
-                <p style="margin: 0;" class= "cl_payback"><?php echo $payback_years ." Years "; if($payback_months != 0){ echo "," .$payback_months." Months"; }?></p> 
+                <p style="margin: 0;" class= "cl_payback"><?php echo $payback_years ." Years"; if($payback_months != 0){ echo "," .$payback_months." Months"; }?></p> 
             </div>
         </div>
         <div class="flex_div">
@@ -832,7 +832,7 @@ class Front_Class
 
         $roof_direction = trim($_GET["roof_direction"]);
         
-if("South" == $roof_direction){
+        if("South" == $roof_direction){
             $roof_shade_south = esc_attr(get_option('wf_solar_roof_shade_south') );
             if ($roof_shade_south == " ") {
                 $roof_direction_value = 0;
