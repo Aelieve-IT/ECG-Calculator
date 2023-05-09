@@ -117,50 +117,51 @@ class Front_Class
         if (empty($kwh_offset)) {
             $kwh_offset= 0.1;
         }
-        /* $shaded_value = $roof_shaded / 10 + 1;*/ /*TODO: try this at some point */
-        if("10" == $roof_shaded){
-            $shaded_value = 1.1;
-        }elseif("20" == $roof_shaded){
-            $shaded_value = 1.2;
-        }elseif("30" == $roof_shaded){
-            $shaded_value = 1.3;
-        }elseif("40" == $roof_shaded){
-            $shaded_value = 1.4;
-        }elseif("50" == $roof_shaded){
-            $shaded_value = 1.5;
-        }elseif("60" == $roof_shaded){
-            $shaded_value = 1.6;
-        }elseif("70" == $roof_shaded){
-            $shaded_value = 1.7;
-        }else{
-            $shaded_value = 0;
-        }
+        $shaded_value = $roof_shaded / 10 + 1; /*TODO: try this at some point */
+        // if("10" == $roof_shaded){
+        //     $shaded_value = 1.1;
+        // }elseif("20" == $roof_shaded){
+        //     $shaded_value = 1.2;
+        // }elseif("30" == $roof_shaded){
+        //     $shaded_value = 1.3;
+        // }elseif("40" == $roof_shaded){
+        //     $shaded_value = 1.4;
+        // }elseif("50" == $roof_shaded){
+        //     $shaded_value = 1.5;
+        // }elseif("60" == $roof_shaded){
+        //     $shaded_value = 1.6;
+        // }elseif("70" == $roof_shaded){
+        //     $shaded_value = 1.7;
+        // }else{
+        //     $shaded_value = 0;
+        // }
+        $offset_value = $kwh_offset / 10 + 1; /*TODO: try this at some point */
         
-        if("10" == $kwh_offset){
-            $offset_value = 0.1;
-        }elseif("20" == $kwh_offset){
-            $offset_value = 0.2;
-        }elseif("30" == $kwh_offset){
-            $offset_value = 0.3;
-        }elseif("40" == $kwh_offset){
-            $offset_value = 0.4;
-        }elseif("50" == $kwh_offset){
-            $offset_value = 0.5;
-        }elseif("60" == $kwh_offset){
-            $offset_value = 0.6;
-        }elseif("70" == $kwh_offset){
-            $offset_value = 0.7;
-        }elseif("80" == $kwh_offset){
-            $offset_value = 0.8;
-        }elseif("90" == $kwh_offset){
-            $offset_value = 0.9;
-        }elseif("100" == $kwh_offset){
-            $offset_value = 1.0;
-        }
+        // if("10" == $kwh_offset){
+        //     $offset_value = 0.1;
+        // }elseif("20" == $kwh_offset){
+        //     $offset_value = 0.2;
+        // }elseif("30" == $kwh_offset){
+        //     $offset_value = 0.3;
+        // }elseif("40" == $kwh_offset){
+        //     $offset_value = 0.4;
+        // }elseif("50" == $kwh_offset){
+        //     $offset_value = 0.5;
+        // }elseif("60" == $kwh_offset){
+        //     $offset_value = 0.6;
+        // }elseif("70" == $kwh_offset){
+        //     $offset_value = 0.7;
+        // }elseif("80" == $kwh_offset){
+        //     $offset_value = 0.8;
+        // }elseif("90" == $kwh_offset){
+        //     $offset_value = 0.9;
+        // }elseif("100" == $kwh_offset){
+        //     $offset_value = 1.0;
+        // }
 
         $roof_direction = trim($_GET["roof_direction"]);
         
-if("South" == $roof_direction){
+        if("South" == $roof_direction){
             $roof_shade_south = esc_attr(get_option('wf_solar_roof_shade_south') );
             if ($roof_shade_south == " ") {
                 $roof_direction_value = 0;
@@ -571,7 +572,7 @@ if("South" == $roof_direction){
 <!--        <script type="text/javascript">-->
 <!---->
 <!--            var tax_credit=--><?php //echo wp_json_encode($arr1); ?>//;
-//            var tax_credit_next=<?php //echo wp_json_encode($arr11); ?>//;
+<!--//            var tax_credit_next=<?php //echo wp_json_encode($arr11); ?>//;-->
         <script type="text/javascript">
             google.charts.load('current', {'packages':['corechart']});
             google.charts.setOnLoadCallback(drawChart);
