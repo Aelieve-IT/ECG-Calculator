@@ -117,24 +117,25 @@ class Front_Class
         if (empty($kwh_offset)) {
             $kwh_offset= 0.1;
         }
-        //$shaded_value = $roof_shaded / 10 + 1; /*TODO: try this at some point */
-        if("10" == $roof_shaded){
-            $shaded_value = 1.1;
-        }elseif("20" == $roof_shaded){
-            $shaded_value = 1.2;
-        }elseif("30" == $roof_shaded){
-            $shaded_value = 1.3;
-        }elseif("40" == $roof_shaded){
-            $shaded_value = 1.4;
-        }elseif("50" == $roof_shaded){
-            $shaded_value = 1.5;
-        }elseif("60" == $roof_shaded){
-            $shaded_value = 1.6;
-        }elseif("70" == $roof_shaded){
-            $shaded_value = 1.7;
-        }else{
-            $shaded_value = 0;
-        }
+        //$shaded_value = $roof_shaded / 100; /*TODO: try this at some point */
+        $shaded_value = $roof_shaded/100;
+        // if("10" == $roof_shaded){
+        //     $shaded_value = 1.1;
+        // }elseif("20" == $roof_shaded){
+        //     $shaded_value = 1.2;
+        // }elseif("30" == $roof_shaded){
+        //     $shaded_value = 1.3;
+        // }elseif("40" == $roof_shaded){
+        //     $shaded_value = 1.4;
+        // }elseif("50" == $roof_shaded){
+        //     $shaded_value = 1.5;
+        // }elseif("60" == $roof_shaded){
+        //     $shaded_value = 1.6;
+        // }elseif("70" == $roof_shaded){
+        //     $shaded_value = 1.7;
+        // }else{
+        //     $shaded_value = 0;
+        // }
         $offset_value = $kwh_offset / 100; /*TODO: try this at some point */
         
         // if("10" == $kwh_offset){
@@ -862,23 +863,25 @@ class Front_Class
         if (empty($kwh_offset)) {
             $kwh_offset= 0.1;
         }
-        if("10" == $roof_shaded){
-            $shaded_value = 1.1;
-        }elseif("20" == $roof_shaded){
-            $shaded_value = 1.2;
-        }elseif("30" == $roof_shaded){
-            $shaded_value = 1.3;
-        }elseif("40" == $roof_shaded){
-            $shaded_value = 1.4;
-        }elseif("50" == $roof_shaded){
-            $shaded_value = 1.5;
-        }elseif("60" == $roof_shaded){
-            $shaded_value = 1.6;
-        }elseif("70" == $roof_shaded){
-            $shaded_value = 1.7;
-        }else{
-            $shaded_value = 0;
-        }
+
+        $shaded_value = $roof_shaded/100;
+        // if("10" == $roof_shaded){
+        //     $shaded_value = 1.1;
+        // }elseif("20" == $roof_shaded){
+        //     $shaded_value = 1.2;
+        // }elseif("30" == $roof_shaded){
+        //     $shaded_value = 1.3;
+        // }elseif("40" == $roof_shaded){
+        //     $shaded_value = 1.4;
+        // }elseif("50" == $roof_shaded){
+        //     $shaded_value = 1.5;
+        // }elseif("60" == $roof_shaded){
+        //     $shaded_value = 1.6;
+        // }elseif("70" == $roof_shaded){
+        //     $shaded_value = 1.7;
+        // }else{
+        //     $shaded_value = 0;
+        // }
         
         if("10" == $kwh_offset){
             $offset_value = 0.1;
@@ -1047,23 +1050,25 @@ class Front_Class
         if (empty($kwh_offset)) {
             $kwh_offset= 0.1;
         }
-        if("10" == $roof_shaded){
-            $shaded_value = 1.1;
-        }elseif("20" == $roof_shaded){
-            $shaded_value = 1.2;
-        }elseif("30" == $roof_shaded){
-            $shaded_value = 1.3;
-        }elseif("40" == $roof_shaded){
-            $shaded_value = 1.4;
-        }elseif("50" == $roof_shaded){
-            $shaded_value = 1.5;
-        }elseif("60" == $roof_shaded){
-            $shaded_value = 1.6;
-        }elseif("70" == $roof_shaded){
-            $shaded_value = 1.7;
-        }else{
-            $shaded_value = 0;
-        }
+
+        $shaded_value = $roof_shaded/100;
+        // if("10" == $roof_shaded){
+        //     $shaded_value = 1.1;
+        // }elseif("20" == $roof_shaded){
+        //     $shaded_value = 1.2;
+        // }elseif("30" == $roof_shaded){
+        //     $shaded_value = 1.3;
+        // }elseif("40" == $roof_shaded){
+        //     $shaded_value = 1.4;
+        // }elseif("50" == $roof_shaded){
+        //     $shaded_value = 1.5;
+        // }elseif("60" == $roof_shaded){
+        //     $shaded_value = 1.6;
+        // }elseif("70" == $roof_shaded){
+        //     $shaded_value = 1.7;
+        // }else{
+        //     $shaded_value = 0;
+        // }
         
         if("10" == $kwh_offset){
             $offset_value = 0.1;
