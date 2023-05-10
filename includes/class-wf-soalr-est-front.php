@@ -1628,9 +1628,11 @@ if("South" == $roof_direction){
             $ak_x_rdv = $annual_kwh*$roof_direction_value;
             $ak_sv_rdv = $annual_kwh + $ak_x_sv + $ak_x_rdv;
             $ak_sv_rdv_x_ov = $ak_sv_rdv*$offset_value;
-            $system_size_kwh = $ak_sv_rdv_x_ov/365/4.5/$d_rate_factor;
+            //$system_size_kwh = $ak_sv_rdv_x_ov/365/4.5/$d_rate_factor;        //difference
+            $system_size_kwh = $ak_sv_rdv_x_ov/365/4.5/$coefficient_system_cost;        //change 
             $annual_production_calc = ($system_size_kwh*1000)*$roof_direction_ratio;
-            $annual_production = ceil($annual_production_calc);
+            //$annual_production = ceil($annual_production_calc);       //difference
+            $annual_production = ceil($annual_kwh);       //change
             $annual_production_update = $annual_production;
             $zero_point_one_five = $annual_production_update*$kwh_tf_year_saving_value;
             $three_percent = $zero_point_one_five*$tf_year_saving_percent_calc;
