@@ -230,7 +230,7 @@ class Front_Class
             $annual_production_sum = $zero_point_one_five+$three_percent;
             $annual_production_update = $annual_production_sum;
             $total=0;
-            for($i=1; $i<25; $i++){
+            for($i=1; $i<26; $i++){
                 $three_percent_loop = $annual_production_update*$tf_year_saving_percent_calc;
                 $annual_production_update = $annual_production_update+$three_percent_loop;
                 $total+=$annual_production_update;
@@ -259,7 +259,7 @@ class Front_Class
             $annual_production_sum = $zero_point_one_five+$three_percent;
             $annual_production_update = $annual_production_sum;
             $total=0;
-            for($i=1; $i<25; $i++){
+            for($i=1; $i<26; $i++){
                 $three_percent_loop = $annual_production_update*$tf_year_saving_percent_calc;
                 $annual_production_update = $annual_production_update+$three_percent_loop;
                 $total+=$annual_production_update;
@@ -899,7 +899,7 @@ class Front_Class
             $annual_production_sum = $zero_point_one_five+$three_percent;
             $annual_production_update = $annual_production_sum;
             $total=0;
-            for($i=1; $i<25; $i++){
+            for($i=1; $i<26; $i++){
                 $three_percent_loop = $annual_production_update*$tf_year_saving_percent_calc;
                 $annual_production_update = $annual_production_update+$three_percent_loop;
                 $total+=$annual_production_update;
@@ -922,7 +922,7 @@ class Front_Class
             $annual_production_sum = $zero_point_one_five+$three_percent;
             $annual_production_update = $annual_production_sum;
             $total=0;
-            for($i=1; $i<25; $i++){
+            for($i=1; $i<26; $i++){
                 $three_percent_loop = $annual_production_update*$tf_year_saving_percent_calc;
                 $annual_production_update = $annual_production_update+$three_percent_loop;
                 $total+=$annual_production_update;
@@ -1085,7 +1085,7 @@ if("South" == $roof_direction){
             $annual_production_sum = $zero_point_one_five+$three_percent;
             $annual_production_update = $annual_production_sum;
             $total=0;
-            for($i=1; $i<25; $i++){
+            for($i=1; $i<26; $i++){
                 $three_percent_loop = $annual_production_update*$tf_year_saving_percent_calc;
                 $annual_production_update = $annual_production_update+$three_percent_loop;
                 $total+=$annual_production_update;
@@ -1109,7 +1109,7 @@ if("South" == $roof_direction){
             $annual_production_sum = $zero_point_one_five+$three_percent;
             $annual_production_update = $annual_production_sum;
             $total=0;
-            for($i=1; $i<25; $i++){
+            for($i=1; $i<26; $i++){
                 $three_percent_loop = $annual_production_update*$tf_year_saving_percent_calc;
                 $annual_production_update = $annual_production_update+$three_percent_loop;
                 $total+=$annual_production_update;
@@ -1609,7 +1609,7 @@ if("South" == $roof_direction){
             $annual_production_sum = $zero_point_one_five+$three_percent;
             $annual_production_update = $annual_production_sum;
             $total=0;
-            for($i=1; $i<25; $i++){
+            for($i=1; $i<26; $i++){
                 $three_percent_loop = $annual_production_update*$tf_year_saving_percent_calc;
                 $annual_production_update = $annual_production_update+$three_percent_loop;
                 $total+=$annual_production_update;
@@ -1637,7 +1637,7 @@ if("South" == $roof_direction){
             $annual_production_sum = $zero_point_one_five+$three_percent;
             $annual_production_update = $annual_production_sum;
             $total=0;
-            for($i=1; $i<25; $i++){  //TODO: i know php starts from 1 instead of 0 but i think this only loops 24 times
+            for($i=1; $i<26; $i++){  //TODO: Test this
                 $three_percent_loop = $annual_production_update*$tf_year_saving_percent_calc;
                 $annual_production_update = $annual_production_update+$three_percent_loop;
                 $total+=$annual_production_update;
