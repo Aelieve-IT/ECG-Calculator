@@ -1803,7 +1803,7 @@ if("South" == $roof_direction){
 
 
         $check_btn_click =trim($_GET["monthly_kwh"]);
-        if($check_btn_click == "NULL"){
+        if($check_btn_click != "NULL"){  //TODO: this check needs to be fixed
             $bill_cost =trim($_GET["billcost"]);
             if (empty($bill_cost)) {
                 $bill_cost = "500";
@@ -1818,14 +1818,14 @@ if("South" == $roof_direction){
             $annual_production_calc = ($system_size_kwh*1000)*$roof_direction_ratio;
             $annual_production = number_format(ceil($annual_production_calc));
         }else{
-            $monthly_kwh =trim($_GET["monthly_kwh"]);
+            $monthly_kwh =trim($_GET["monthly_kwh"]); //TODO: this should only pull for a bill entry method. AKA Manual KWH 
             $annual_kwh = $monthly_kwh*12;
             $ak_x_sv = $annual_kwh*$shaded_value;
             $ak_x_rdv = $annual_kwh*$roof_direction_value;
             $ak_sv_rdv = $annual_kwh + $ak_x_sv + $ak_x_rdv;
             $ak_sv_rdv_x_ov = $ak_sv_rdv*$offset_value;
             $system_size_kwh = $ak_sv_rdv_x_ov/365/4.5/$d_rate_factor;
-            $annual_production_calc = ($system_size_kwh*1000)*$roof_direction_ratio;
+            $annual_production_calc = ($monthly_kwh*12);
             $annual_production = number_format(ceil($annual_production_calc));
         }
         
