@@ -1622,7 +1622,7 @@ if("South" == $roof_direction){
             if (empty($tf_year_saving_percent)) {
                 $tf_year_saving_percent = 10;
             }
-            $tf_year_saving_percent_calc = $tf_year_saving_percent/100;
+            $tf_year_saving_percent_calc = $tf_year_saving_percent/100;  //TODO: this section is for monthly kwh entry but is calculated as if it were a bill cost entry
             $annual_kwh = $monthly_kwh*12;
             $ak_x_sv = $annual_kwh*$shaded_value;
             $ak_x_rdv = $annual_kwh*$roof_direction_value;
@@ -1638,7 +1638,7 @@ if("South" == $roof_direction){
             $annual_production_update = $annual_production_sum;
             $total=0;
             for($i=1; $i<26; $i++){  //TODO: Test this
-                $three_percent_loop = $annual_production_update*$tf_year_saving_percent_calc;
+                $three_percent_loop = $annual_production_update*$tf_year_saving_percent_calc; //TODO: annual_production_update is different entering this loop than any other loop
                 $annual_production_update = $annual_production_update+$three_percent_loop;
                 $total+=$annual_production_update;
             }
