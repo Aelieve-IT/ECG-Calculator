@@ -117,25 +117,25 @@ class Front_Class
         if (empty($kwh_offset)) {
             $kwh_offset= 0.1;
         }
-        $shaded_value = $roof_shaded / 10 + 1; /*TODO: try this at some point */
-        // if("10" == $roof_shaded){
-        //     $shaded_value = 1.1;
-        // }elseif("20" == $roof_shaded){
-        //     $shaded_value = 1.2;
-        // }elseif("30" == $roof_shaded){
-        //     $shaded_value = 1.3;
-        // }elseif("40" == $roof_shaded){
-        //     $shaded_value = 1.4;
-        // }elseif("50" == $roof_shaded){
-        //     $shaded_value = 1.5;
-        // }elseif("60" == $roof_shaded){
-        //     $shaded_value = 1.6;
-        // }elseif("70" == $roof_shaded){
-        //     $shaded_value = 1.7;
-        // }else{
-        //     $shaded_value = 0;
-        // }
-        $offset_value = $kwh_offset / 10 + 1; /*TODO: try this at some point */
+        //$shaded_value = $roof_shaded / 10 + 1; /*TODO: try this at some point */
+        if("10" == $roof_shaded){
+            $shaded_value = 1.1;
+        }elseif("20" == $roof_shaded){
+            $shaded_value = 1.2;
+        }elseif("30" == $roof_shaded){
+            $shaded_value = 1.3;
+        }elseif("40" == $roof_shaded){
+            $shaded_value = 1.4;
+        }elseif("50" == $roof_shaded){
+            $shaded_value = 1.5;
+        }elseif("60" == $roof_shaded){
+            $shaded_value = 1.6;
+        }elseif("70" == $roof_shaded){
+            $shaded_value = 1.7;
+        }else{
+            $shaded_value = 0;
+        }
+        $offset_value = $kwh_offset / 100; /*TODO: try this at some point */
         
         // if("10" == $kwh_offset){
         //     $offset_value = 0.1;
@@ -1637,7 +1637,7 @@ if("South" == $roof_direction){
             $annual_production_sum = $zero_point_one_five+$three_percent;
             $annual_production_update = $annual_production_sum;
             $total=0;
-            for($i=1; $i<25; $i++){
+            for($i=1; $i<25; $i++){  //TODO: i know php starts from 1 instead of 0 but i think this only loops 24 times
                 $three_percent_loop = $annual_production_update*$tf_year_saving_percent_calc;
                 $annual_production_update = $annual_production_update+$three_percent_loop;
                 $total+=$annual_production_update;
@@ -1803,7 +1803,7 @@ if("South" == $roof_direction){
 
 
         $check_btn_click =trim($_GET["monthly_kwh"]);
-        if($check_btn_click != "NULL"){  //TODO: this check needs to be fixed
+        if($check_btn_click == "NULL"){  //TODO: this check needs to be fixed
             $bill_cost =trim($_GET["billcost"]);
             if (empty($bill_cost)) {
                 $bill_cost = "500";
