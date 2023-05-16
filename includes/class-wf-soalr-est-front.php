@@ -464,7 +464,7 @@ class Front_Class
 
         $roof_shaded =trim($_GET["roof_shaded"]);
         if (empty($roof_shaded)) {
-            $roof_shaded= 0.5;
+            $roof_shaded= 0;
         }
         $kwh_offset =trim($_GET["kwh_offset"]);
         if (empty($kwh_offset)) {
@@ -857,7 +857,7 @@ class Front_Class
 
         $roof_shaded =trim($_GET["roof_shaded"]);
         if (empty($roof_shaded)) {
-            $roof_shaded= 0.5;
+            $roof_shaded= 0;
         }
         $kwh_offset =trim($_GET["kwh_offset"]);
         if (empty($kwh_offset)) {
