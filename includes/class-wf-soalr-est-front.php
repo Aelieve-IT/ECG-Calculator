@@ -1952,7 +1952,7 @@ class Front_Class
             $ak_sv_rdv = $annual_kwh + $ak_x_sv + $ak_x_rdv;
             $ak_sv_rdv_x_ov = $ak_sv_rdv*$offset_value;
             $system_size_kwh = $ak_sv_rdv_x_ov/365/4.5/$d_rate_factor;
-            $annual_production_calc = ($monthly_kwh*12);
+            $annual_production_calc = ($monthly_kwh*12); //TODO: match line: 1945
             $annual_production = number_format(ceil($annual_production_calc));
         }
         
