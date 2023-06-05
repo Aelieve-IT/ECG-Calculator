@@ -1,10 +1,10 @@
 <?php
 /**
- * 
+ *
  */
 class Front_Class
 {
-    
+
     function __construct()
     {
         // $url = "https://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
@@ -33,16 +33,14 @@ class Front_Class
         }
         // }
         // }
-        
-        
+
         add_shortcode('solar_real_time_mwh' , array($this , "wf_solar_real_time_mwh"));
         add_shortcode('solar_real_time_Co2_offset' , array($this , "wf_solar_real_time_Co2_offset"));
         add_shortcode('solar_carbon_equivalet_auto_miles' , array($this , "wf_carbon_equivalet_auto_miles"));
         add_action( 'wp_enqueue_scripts', array( $this, 'wf_solar_front_script' ), 10 );
-        
+
     }
 
-    
 
     public function wf_solar_front_script() {
             // Enqueue Scripts.
@@ -51,7 +49,7 @@ class Front_Class
         wp_enqueue_script( 'googlegraph', 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js', '0.5', true);
         wp_enqueue_script( 'jquery' );
           //  wp_enqueue_style( 'wf-solar-est-front', plugins_url( 'assets/css/wf_solar_est_admin_css.css', _FILE_ ), false, '1.0' );
-        
+
             // Localize the variables.
         $base_url=get_bloginfo('wpurl');
         $wf_solar_est_data = array(
@@ -62,19 +60,19 @@ class Front_Class
         wp_localize_script( 'wf-solar-est-front', 'solar_est_php_vars', $wf_solar_est_data );
     }
 
-    
+
     public function wf_solar_install_map(){
         $auto_address = $_GET["autocomplete"];
         ?>
       <!--   <style>
             #wf_est_googleMap_last{
-                width:550px; 
+                width:550px;
                 height:550px;
             }
             @media only screen and (max-width: 768px) {
-                
+
                 #wf_est_googleMap_last{
-                    width:482px; 
+                    width:482px;
                     height:550px;
                 }
             }
@@ -137,7 +135,7 @@ class Front_Class
         //     $shaded_value = 0;
         // }
         $offset_value = $kwh_offset / 100; /*TODO: try this at some point */
-        
+
         // if("10" == $kwh_offset){
         //     $offset_value = 0.1;
         // }elseif("20" == $kwh_offset){
@@ -161,7 +159,7 @@ class Front_Class
         // }
 
         $roof_direction = trim($_GET["roof_direction"]);
-        
+
         if("South" == $roof_direction){
             $roof_shade_south = esc_attr(get_option('wf_solar_roof_shade_south') );
             if ($roof_shade_south == " ") {
@@ -291,7 +289,7 @@ class Front_Class
             $average_system_cost = ceil($cost_per_watt*($system_size_kwh*1000));
             $federal_tax_credit = $average_system_cost*$federal_tax_credit_value;
             $cost_after_incentives = ceil($average_system_cost-$federal_tax_credit);
-            
+
             //$annual_production = ceil($annual_kwh);  //original
             //start MP changes
             $annual_production_calc = ($system_size_kwh*1000)*$roof_direction_ratio;
@@ -389,14 +387,14 @@ class Front_Class
             <div class="real_time_value">
                 <p class="real_p_value"><?php echo $real_time_mwh; ?> Gwh</p>
                 <p class="real_p_text">Produced</p>
-                
+
             </div>
             <div class="real_time_title">
                 <?php
                 echo "ECG Solar Real Time Mwh";
                 ?>
             </div>
-            
+
         </div>
         <?php
     }
@@ -413,7 +411,7 @@ class Front_Class
                 echo "ECG Solar Real Time Co2 Offset";
                 ?>
             </div>
-            
+
         </div>
         <?php
     }
@@ -422,10 +420,10 @@ class Front_Class
         $real_time_auto_miles=get_option('wf_get_real_time_auto_miles')
         ?>
         <div class="real_time_label">
-            
+
             <div class="real_time_value">
                 <p class="real_p_value"><?php echo number_format($real_time_auto_miles, 2, ".", ","); ?></p>
-                <p class="real_p_text">Auto Miles Saved</p> 
+                <p class="real_p_text">Auto Miles Saved</p>
             </div>
             <div class="real_time_title">
                 <?php
@@ -436,7 +434,7 @@ class Front_Class
 
         <?php
     }
-    
+
     public function wf_solar_system_cost(){
         global $wpdb;
         $state = trim($_GET["state"]);
@@ -487,7 +485,7 @@ class Front_Class
         }else{
             $shaded_value = 0;
         }
-        
+
         if("10" == $kwh_offset){
             $offset_value = 0.1;
         }elseif("20" == $kwh_offset){
@@ -510,7 +508,7 @@ class Front_Class
             $offset_value = 1.0;
         }
         $roof_direction = trim($_GET["roof_direction"]);
-        
+
         if("South" == $roof_direction){
             $roof_shade_south = esc_attr(get_option('wf_solar_roof_shade_south') );
             if ($roof_shade_south == " ") {
@@ -627,7 +625,7 @@ class Front_Class
             $years_months = explode('.', $payback_round_to_one);
             $payback_years = $years_months[0];
             $payback_months = $years_months[1];
-            
+
             $system_sec_array = array();
             $system_sec_array[] =array('Average System Cost' , $average_system_cost);
             $system_sec_array[] =array('Federal Tax Credit' , $federal_tax_credit);
@@ -711,12 +709,11 @@ class Front_Class
                 <p style="margin-left: 10px; color: white;"><?php echo "<b> $". ceil($payment_with_tax) . "</b>"; ?></p> 
             </div>
         </div>
-        
+
         <?php
-        
+
     }
-    
-    
+
     public function wf_solar_cash_flow_twentyfive_year(){
         global $wpdb;
         $bill_cost =trim($_GET["billcost"]);
@@ -804,9 +801,9 @@ class Front_Class
         </div>
         <?php
     }
-    
+
     public function wf_solar_saving_and_return(){
-        
+
          global $wpdb;
         $bill_cost =trim($_GET["billcost"]);
         $state = trim($_GET["state"]);
@@ -859,7 +856,7 @@ class Front_Class
         // }else{
         //     $shaded_value = 0;
         // }
-        
+
         if("10" == $kwh_offset){
             $offset_value = 0.1;
         }elseif("20" == $kwh_offset){
@@ -883,7 +880,7 @@ class Front_Class
         }
 
         $roof_direction = trim($_GET["roof_direction"]);
-        
+
         if("South" == $roof_direction){
             $roof_shade_south = esc_attr(get_option('wf_solar_roof_shade_south') );
             if ($roof_shade_south == " ") {
@@ -990,10 +987,10 @@ class Front_Class
             <p style="margin-left: 10px; color: white;"><?php echo "$".number_format(ceil($total)); ?></p> 
         </div>
         <?php
-        
+
     }
     public function wf_solar_bill_saving_twentyfive_year(){
-        
+
         global $wpdb;
         $bill_cost =trim($_GET["billcost"]);
         $state = trim($_GET["state"]);
@@ -1046,7 +1043,7 @@ class Front_Class
         // }else{
         //     $shaded_value = 0;
         // }
-        
+
         if("10" == $kwh_offset){
             $offset_value = 0.1;
         }elseif("20" == $kwh_offset){
@@ -1070,8 +1067,8 @@ class Front_Class
         }
 
         $roof_direction = trim($_GET["roof_direction"]);
-        
-if("South" == $roof_direction){
+
+        if("South" == $roof_direction){
             $roof_shade_south = esc_attr(get_option('wf_solar_roof_shade_south') );
             if ($roof_shade_south == " ") {
                 $roof_direction_value = 0;
@@ -1270,9 +1267,9 @@ if("South" == $roof_direction){
             </div>
         </div>
         <?php
-        
+
     }
-    
+
     public function wf_solar_montly_bill_savings(){
         $bill_cost =trim($_GET["billcost"]);
         $estimated_bill = esc_attr(get_option('wf_solar_bill_after_solar') );
@@ -1335,7 +1332,7 @@ if("South" == $roof_direction){
             }else{
                 $estimated_bill = esc_attr(get_option('wf_solar_bill_after_solar') );
             }
-            
+
             $monthy_bill_savings = $bill_cost-$estimated_bill;
         }else{
             $monthly_kwh =trim($_GET["monthly_kwh"]);
@@ -1404,10 +1401,10 @@ if("South" == $roof_direction){
                 ?>
             </div>
         </div>
-        
+
         <?php
     }
-    
+
     public function wf_solar_system_prices(){
         global $wpdb;
         $state = trim($_GET["state"]);
@@ -1458,7 +1455,7 @@ if("South" == $roof_direction){
         }else{
             $shaded_value = 0;
         }
-        
+
         if("10" == $kwh_offset){
             $offset_value = 0.1;
         }elseif("20" == $kwh_offset){
@@ -1483,7 +1480,7 @@ if("South" == $roof_direction){
         $coefficient_system_cost = esc_attr(get_option('wf_solar_coefficient_system_cost') );
         $d_rate_factor = esc_attr(get_option('wf_solar_d_rate_factor') );
         $roof_direction = trim($_GET["roof_direction"]);
-        
+
         if("South" == $roof_direction){
             $roof_shade_south = esc_attr(get_option('wf_solar_roof_shade_south') );
             if ($roof_shade_south == " ") {
@@ -1562,9 +1559,9 @@ if("South" == $roof_direction){
             ?>
         </div>
         <?php
-        
+
     }
-    
+
     public function wf_solar_yr_savings(){
         global $wpdb;
         global $state;
@@ -1616,7 +1613,7 @@ if("South" == $roof_direction){
         }else{
             $shaded_value = 0;
         }
-        
+
         if("10" == $kwh_offset){
             $offset_value = 0.1;
         }elseif("20" == $kwh_offset){
@@ -1639,7 +1636,7 @@ if("South" == $roof_direction){
             $offset_value = 1.0;
         }
         $roof_direction = trim($_GET["roof_direction"]);
-        
+
         if("South" == $roof_direction){
             $roof_shade_south = esc_attr(get_option('wf_solar_roof_shade_south') );
             if ($roof_shade_south == " ") {
@@ -1773,21 +1770,21 @@ if("South" == $roof_direction){
                 $total+=$annual_production_update;
             }
         }
-        
+
         ?>
         <div style="text-align: center; padding-top: 30px;">
             <?php
             echo "25 Years Savings";
             echo "<br>";
             echo "<p style='color:#2eaae1; margin-top: 14px; font-weight: 700;'>$".number_format(ceil($total))."</p>";
-            
+
             ?>
         </div>
         <?php
     }
-    
+
     public function wf_solar_annual_production(){
-        
+
         global $wpdb;
         $state = trim($_GET["state"]);
         if($state == 'IL'){
@@ -1837,7 +1834,7 @@ if("South" == $roof_direction){
         }else{
             $shaded_value = 0;
         }
-        
+
         if("10" == $kwh_offset){
             $offset_value = 0.1;
         }elseif("20" == $kwh_offset){
@@ -1860,7 +1857,7 @@ if("South" == $roof_direction){
             $offset_value = 1.0;
         }
         $roof_direction = trim($_GET["roof_direction"]);
-        
+
         if("South" == $roof_direction){
             $roof_shade_south = esc_attr(get_option('wf_solar_roof_shade_south') );
             if ($roof_shade_south == " ") {
