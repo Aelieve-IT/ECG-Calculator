@@ -1952,7 +1952,7 @@ class Front_Class
             $ak_sv_rdv = $annual_kwh + $ak_x_sv + $ak_x_rdv;
             $ak_sv_rdv_x_ov = $ak_sv_rdv*$offset_value;
             $system_size_kwh = $ak_sv_rdv_x_ov/365/4.5/$d_rate_factor;
-            $annual_production_calc = ($monthly_kwh*12); //TODO: match line: 1945
+            $annual_production_calc = ($system_size_kwh*1000)*$roof_direction_ratio; //TODO: match line: 1945
             $annual_production = number_format(ceil($annual_production_calc));
         }
         
@@ -2095,7 +2095,7 @@ class Front_Class
             $ak_x_rdv = $annual_kwh*$roof_direction_value;
             $ak_sv_rdv = $annual_kwh + $ak_x_sv + $ak_x_rdv;
             $ak_sv_rdv_x_ov = $ak_sv_rdv*$offset_value;
-            $system_size_kwh = $ak_sv_rdv_x_ov/365/4.5/$d_rate_factor;  //TODO difference here
+            $system_size_kwh = $ak_sv_rdv_x_ov/365/4.5/$d_rate_factor;  //TODO Check out the differences here and ln 2110
             $round_to_two = round($system_size_kwh ,2);
         }else{
             $monthly_kwh =trim($_GET["monthly_kwh"]);
