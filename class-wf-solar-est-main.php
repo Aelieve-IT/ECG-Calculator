@@ -554,17 +554,26 @@ register_setting(
             'wf_solar_d_rate_factor'  //get_option name
         );
 
+
+function wf_d_rate_factor_callback() {
+    ?>
+    <input type="number" step="any" class="d_rate_factor" name="wf_solar_d_rate_factor" value="<?php echo esc_attr(get_option('wf_solar_d_rate_factor') ); ?>" >
+    <p><?php echo esc_html__('Add the value of the KW Powerplant Size D Rate Factor', 'wf_image_api'); ?></p>
+    <?php
+
+}
+
 add_settings_field(
-            'wf_solar_d_rate_factor_kwh', //get_option name
-            __( 'KW Powerplant Size D Rate Factor (KW Entry Method)', 'wf_image_api' ), //Field Label 
-            'wf_d_rate_factor_kwh_callback', //Field Callback //TODO Possible Change Request DONE
-            'wf_calculations_register_settings_section', //do_settings_sections
-            'wf_solar_calc' //page_name
-        );
+    'wf_solar_d_rate_factor_kwh', //get_option name
+    __( 'KW Powerplant Size D Rate Factor (KW Entry Method)', 'wf_image_api' ), //Field Label 
+    'wf_d_rate_factor_kwh_callback', //Field Callback //TODO Possible Change Request DONE
+    'wf_calculations_register_settings_section', //do_settings_sections
+    'wf_solar_calc' //page_name
+);
 register_setting(
-            'wf_solar_calculations_page', //settings_fields
-            'wf_solar_d_rate_factor_kwh'  //get_option name //TODO Possible Change Request DONE
-        );
+    'wf_solar_calculations_page', //settings_fields
+    'wf_solar_d_rate_factor_kwh'  //get_option name //TODO Possible Change Request DONE
+);
 
 function wf_d_rate_factor_callback() {
     ?>
