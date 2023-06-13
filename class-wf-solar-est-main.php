@@ -556,14 +556,14 @@ register_setting(
 
 add_settings_field(
             'wf_solar_d_rate_factor', //get_option name
-            __( 'KW Powerplant Size D Rate Factor (KW Entry Method)', 'wf_image_api' ), //Field Label //TODO Change to reflect KW entry method in code
-            'wf_d_rate_factor_callback', //Field Callback
+            __( 'KW Powerplant Size D Rate Factor (KW Entry Method)', 'wf_image_api' ), //Field Label 
+            'wf_d_rate_factor_callback', //Field Callback //TODO Possible Change Request
             'wf_calculations_register_settings_section', //do_settings_sections
             'wf_solar_calc' //page_name
         );
 register_setting(
             'wf_solar_calculations_page', //settings_fields
-            'wf_solar_d_rate_factor'  //get_option name
+            'wf_solar_d_rate_factor'  //get_option name //TODO Possible Change Request
         );
 
 function wf_d_rate_factor_callback() {
@@ -588,14 +588,14 @@ register_setting(
 
 add_settings_field(
             'wf_solar_bill_tf_year', //get_option name
-            __( '25 Year Savings Value (KW Entry Method)', 'wf_image_api' ), //Field Label //TODO Change to reflect KW entry method in code
-            'wf_bill_tf_year_callback', //Field Callback
+            __( '25 Year Savings Value (KW Entry Method)', 'wf_image_api' ), //Field Label 
+            'wf_bill_tf_year_callback', //Field Callback //TODO Possible Change Request
             'wf_calculations_register_settings_section', //do_settings_sections
             'wf_solar_calc' //page_name
         );
 register_setting(
             'wf_solar_calculations_page', //settings_fields
-            'wf_solar_bill_tf_year'  //get_option name
+            'wf_solar_bill_tf_year'  //get_option name //TODO Possible Change Request
         );
 
 function wf_bill_tf_year_callback() {
@@ -609,13 +609,13 @@ function wf_bill_tf_year_callback() {
 add_settings_field(
             'wf_solar_kwh_tf_year', //get_option name
             __( '25 Year Savings Value (KWH Entry Method)', 'wf_image_api' ), //Field Label
-            'wf_kwh_tf_year_callback', //Field Callback
+            'wf_kwh_tf_year_callback', //Field Callback //TODO Possible Change Request
             'wf_calculations_register_settings_section', //do_settings_sections
             'wf_solar_calc' //page_name
         );
 register_setting(
             'wf_solar_calculations_page', //settings_fields
-            'wf_solar_kwh_tf_year'  //get_option name
+            'wf_solar_kwh_tf_year'  //get_option name //TODO Possible Change Request
         );
 
 function wf_kwh_tf_year_callback() {
@@ -862,14 +862,14 @@ register_setting(
 
 add_settings_field(
             'wf_solar_roof_shade_south_production_ratio', //get_option name
-            __( 'South Production Ratio (KW entry Method)', 'wf_image_api' ), //Field Label //TODO Change to reflect KW entry method in code
-            'wf_roof_shade_south_production_ratio_callback', //Field Callback
+            __( 'South Production Ratio (KW entry Method)', 'wf_image_api' ), //Field Label 
+            'wf_roof_shade_south_production_ratio_callback', //Field Callback //TODO Possible Change Request
             'wf_calculations_register_settings_section', //do_settings_sections
             'wf_solar_calc' //page_name
         );
 register_setting(
-            'wf_solar_calculations_page', //settings_fields
-            'wf_solar_roof_shade_south_production_ratio'  //get_option name
+            'wf_solar_calculations_page', //settings_fields 
+            'wf_solar_roof_shade_south_production_ratio'  //get_option name //TODO Possible Change Request
         );
 
 function wf_roof_shade_south_production_ratio_callback() {
@@ -894,14 +894,14 @@ register_setting(
 
 add_settings_field(
             'wf_solar_roof_shade_south_east_production_ratio', //get_option name
-            __( 'South East Production Ratio (KW entry Method)', 'wf_image_api' ), //Field Label //TODO Change to reflect KW entry method in code
-            'wf_roof_shade_south_east_production_ratio_callback', //Field Callback
+            __( 'South East Production Ratio (KW entry Method)', 'wf_image_api' ), //Field Label 
+            'wf_roof_shade_south_east_production_ratio_callback', //Field Callback //TODO Possible Change Request
             'wf_calculations_register_settings_section', //do_settings_sections
             'wf_solar_calc' //page_name
         );
 register_setting(
             'wf_solar_calculations_page', //settings_fields
-            'wf_solar_roof_shade_south_east_production_ratio'  //get_option name
+            'wf_solar_roof_shade_south_east_production_ratio'  //get_option name //TODO Possible Change Request
         );
 
 function wf_roof_shade_south_east_production_ratio_callback() {
@@ -926,14 +926,14 @@ register_setting(
 
 add_settings_field(
             'wf_solar_roof_shade_east_production_ratio', //get_option name
-            __( 'East Production Ratio (KW entry Method)', 'wf_image_api' ), //Field Label //TODO Change to reflect KW entry method in code
-            'wf_roof_shade_east_production_ratio_callback', //Field Callback
+            __( 'East Production Ratio (KW entry Method)', 'wf_image_api' ), //Field Label 
+            'wf_roof_shade_east_production_ratio_callback', //Field Callback //TODO Possible Change Request
             'wf_calculations_register_settings_section', //do_settings_sections
             'wf_solar_calc' //page_name
         );
 register_setting(
             'wf_solar_calculations_page', //settings_fields
-            'wf_solar_roof_shade_east_production_ratio'  //get_option name
+            'wf_solar_roof_shade_east_production_ratio'  //get_option name //TODO Possible Change Request
         );
 
 function wf_roof_shade_east_production_ratio_callback() {
@@ -958,14 +958,14 @@ register_setting(
 
 add_settings_field(
             'wf_solar_roof_shade_south_west_production_ratio', //get_option name
-            __( 'South West Production Ratio (KW entry Method)', 'wf_image_api' ), //Field Label //TODO Change to reflect KW entry method in code
-            'wf_roof_shade_south_west_production_ratio_callback', //Field Callback
+            __( 'South West Production Ratio (KW entry Method)', 'wf_image_api' ), //Field Label 
+            'wf_roof_shade_south_west_production_ratio_callback', //Field Callback //TODO Possible Change Request
             'wf_calculations_register_settings_section', //do_settings_sections
             'wf_solar_calc' //page_name
         );
 register_setting(
             'wf_solar_calculations_page', //settings_fields
-            'wf_solar_roof_shade_south_west_production_ratio'  //get_option name
+            'wf_solar_roof_shade_south_west_production_ratio'  //get_option name //TODO Possible Change Request
         );
 
 function wf_roof_shade_south_west_production_ratio_callback() {
@@ -990,14 +990,14 @@ register_setting(
 
 add_settings_field(
             'wf_solar_roof_shade_west_production_ratio', //get_option name
-            __( 'West Production Ratio (KW entry Method)', 'wf_image_api' ), //Field Label //TODO Change to reflect KW entry method in code
-            'wf_roof_shade_west_production_ratio_callback', //Field Callback
+            __( 'West Production Ratio (KW entry Method)', 'wf_image_api' ), //Field Label
+            'wf_roof_shade_west_production_ratio_callback', //Field Callback //TODO Possible Change Request
             'wf_calculations_register_settings_section', //do_settings_sections
             'wf_solar_calc' //page_name
         );
 register_setting(
             'wf_solar_calculations_page', //settings_fields
-            'wf_solar_roof_shade_west_production_ratio'  //get_option name
+            'wf_solar_roof_shade_west_production_ratio'  //get_option name //TODO Possible Change Request
         );
 
 function wf_roof_shade_west_production_ratio_callback() {
