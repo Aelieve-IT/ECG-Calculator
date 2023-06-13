@@ -214,6 +214,12 @@ class Front_Class
             }else{
                 $roof_direction_ratio = $roof_shade_south_production_rate/100;
             }
+            $roof_shade_south_production_rate_kwh = esc_attr(get_option('wf_solar_roof_shade_south_production_ratio_kwh') );
+            if ($roof_shade_south_production_rate_kwh == " ") {
+                $roof_direction_ratio_kwh = 0;
+            }else{
+                $roof_direction_ratio_kwh = $roof_shade_south_production_rate_kwh/100;
+            }
         }elseif("South_East" == $roof_direction){
             $roof_shade_south_east = esc_attr(get_option('wf_solar_roof_shade_south_east') );
             if ($roof_shade_south_east == " ") {
@@ -226,6 +232,12 @@ class Front_Class
                 $roof_direction_ratio = 0;
             }else{
                 $roof_direction_ratio = $roof_shade_south_east_production_ratio/100;
+            }
+            $roof_shade_south_east_production_ratio_kwh = esc_attr(get_option('wf_solar_roof_shade_south_east_production_ratio_kwh') );
+            if ($roof_shade_south_east_production_ratio_kwh == " ") {
+                $roof_direction_ratio_kwh = 0;
+            }else{
+                $roof_direction_ratio_kwh = $roof_shade_south_east_production_ratio_kwh/100;
             }
         }elseif("East" == $roof_direction){
             $roof_shade_east = esc_attr(get_option('wf_solar_roof_shade_east') );
@@ -240,6 +252,12 @@ class Front_Class
             }else{
                 $roof_direction_ratio = $roof_shade_east_production_ratio/100;
             }
+            $roof_shade_east_production_ratio_kwh = esc_attr(get_option('wf_solar_roof_shade_east_production_ratio_kwh') );
+            if ($roof_shade_east_production_ratio_kwh == " ") {
+                $roof_direction_ratio_kwh = 0;
+            }else{
+                $roof_direction_ratio_kwh = $roof_shade_east_production_ratio_kwh/100;
+            }
         }elseif("South_West" == $roof_direction){
             $roof_shade_south_west = esc_attr(get_option('wf_solar_roof_shade_south_west') );
             if ($roof_shade_south_west == " ") {
@@ -253,6 +271,12 @@ class Front_Class
             }else{
                 $roof_direction_ratio = $roof_shade_south_west_production_ratio/100;
             }
+            $roof_shade_south_west_production_ratio_kwh = esc_attr(get_option('wf_solar_roof_shade_south_west_production_ratio_kwh') );
+            if ($roof_shade_south_west_production_ratio_kwh == " ") {
+                $roof_direction_ratio_kwh = 0;
+            }else{
+                $roof_direction_ratio_kwh = $roof_shade_south_west_production_ratio_kwh/100;
+            }
         }elseif("West" == $roof_direction){
             $roof_shade_west = esc_attr(get_option('wf_solar_roof_shade_west') );
             if ($roof_shade_west == " ") {
@@ -265,6 +289,12 @@ class Front_Class
                 $roof_direction_ratio = 0;
             }else{
                 $roof_direction_ratio = $roof_shade_west_production_ratio/100;
+            }
+            $roof_shade_west_production_ratio_kwh = esc_attr(get_option('wf_solar_roof_shade_west_production_ratio_kwh') );
+            if ($roof_shade_west_production_ratio_kwh == " ") {
+                $roof_direction_ratio_kwh = 0;
+            }else{
+                $roof_direction_ratio_kwh = $roof_shade_west_production_ratio_kwh/100;
             }
         }
         //end MP insert
@@ -1650,6 +1680,12 @@ class Front_Class
             }else{
                 $roof_direction_ratio = $roof_shade_south_production_rate/100;
             }
+            $roof_shade_south_production_rate_kwh = esc_attr(get_option('wf_solar_roof_shade_south_production_ratio_kwh') );
+            if ($roof_shade_south_production_rate_kwh == " ") {
+                $roof_direction_ratio_kwh = 0;
+            }else{
+                $roof_direction_ratio_kwh = $roof_shade_south_production_rate_kwh/100;
+            }
         }elseif("South_East" == $roof_direction){
             $roof_shade_south_east = esc_attr(get_option('wf_solar_roof_shade_south_east') );
             if ($roof_shade_south_east == " ") {
@@ -1662,6 +1698,12 @@ class Front_Class
                 $roof_direction_ratio = 0;
             }else{
                 $roof_direction_ratio = $roof_shade_south_east_production_ratio/100;
+            }
+            $roof_shade_south_east_production_ratio_kwh = esc_attr(get_option('wf_solar_roof_shade_south_east_production_ratio_kwh') );
+            if ($roof_shade_south_east_production_ratio_kwh == " ") {
+                $roof_direction_ratio_kwh = 0;
+            }else{
+                $roof_direction_ratio_kwh = $roof_shade_south_east_production_ratio_kwh/100;
             }
         }elseif("East" == $roof_direction){
             $roof_shade_east = esc_attr(get_option('wf_solar_roof_shade_east') );
@@ -1676,6 +1718,12 @@ class Front_Class
             }else{
                 $roof_direction_ratio = $roof_shade_east_production_ratio/100;
             }
+            $roof_shade_east_production_ratio_kwh = esc_attr(get_option('wf_solar_roof_shade_east_production_ratio_kwh') );
+            if ($roof_shade_east_production_ratio_kwh == " ") {
+                $roof_direction_ratio_kwh = 0;
+            }else{
+                $roof_direction_ratio_kwh = $roof_shade_east_production_ratio_kwh/100;
+            }
         }elseif("South_West" == $roof_direction){
             $roof_shade_south_west = esc_attr(get_option('wf_solar_roof_shade_south_west') );
             if ($roof_shade_south_west == " ") {
@@ -1689,6 +1737,12 @@ class Front_Class
             }else{
                 $roof_direction_ratio = $roof_shade_south_west_production_ratio/100;
             }
+            $roof_shade_south_west_production_ratio_kwh = esc_attr(get_option('wf_solar_roof_shade_south_west_production_ratio_kwh') );
+            if ($roof_shade_south_west_production_ratio_kwh == " ") {
+                $roof_direction_ratio_kwh = 0;
+            }else{
+                $roof_direction_ratio_kwh = $roof_shade_south_west_production_ratio_kwh/100;
+            }
         }elseif("West" == $roof_direction){
             $roof_shade_west = esc_attr(get_option('wf_solar_roof_shade_west') );
             if ($roof_shade_west == " ") {
@@ -1701,6 +1755,12 @@ class Front_Class
                 $roof_direction_ratio = 0;
             }else{
                 $roof_direction_ratio = $roof_shade_west_production_ratio/100;
+            }
+            $roof_shade_west_production_ratio_kwh = esc_attr(get_option('wf_solar_roof_shade_west_production_ratio_kwh') );
+            if ($roof_shade_west_production_ratio_kwh == " ") {
+                $roof_direction_ratio_kwh = 0;
+            }else{
+                $roof_direction_ratio_kwh = $roof_shade_west_production_ratio_kwh/100;
             }
         }
         $coefficient_system_cost = esc_attr(get_option('wf_solar_coefficient_system_cost') );
@@ -1755,7 +1815,7 @@ class Front_Class
             $ak_sv_rdv_x_ov = $ak_sv_rdv*$offset_value;
             //$system_size_kwh = $ak_sv_rdv_x_ov/365/4.5/$d_rate_factor;        //difference
             $system_size_kwh = $ak_sv_rdv_x_ov/365/4.5/$coefficient_system_cost;        //change 
-            $annual_production_calc = ($system_size_kwh*1000)*$roof_direction_ratio;
+            $annual_production_calc = ($system_size_kwh*1000)*$roof_direction_ratio_kwh;
             //$annual_production = ceil($annual_production_calc);       //difference
             $annual_production = ceil($annual_kwh);       //change
             $annual_production_update = $annual_production;
@@ -1871,6 +1931,12 @@ class Front_Class
             }else{
                 $roof_direction_ratio = $roof_shade_south_production_rate/100;
             }
+            $roof_shade_south_production_rate_kwh = esc_attr(get_option('wf_solar_roof_shade_south_production_ratio_kwh') );
+            if ($roof_shade_south_production_rate_kwh == " ") {
+                $roof_direction_ratio_kwh = 0;
+            }else{
+                $roof_direction_ratio_kwh = $roof_shade_south_production_rate_kwh/100;
+            }
         }elseif("South_East" == $roof_direction){
             $roof_shade_south_east = esc_attr(get_option('wf_solar_roof_shade_south_east') );
             if ($roof_shade_south_east == " ") {
@@ -1883,6 +1949,12 @@ class Front_Class
                 $roof_direction_ratio = 0;
             }else{
                 $roof_direction_ratio = $roof_shade_south_east_production_ratio/100;
+            }
+            $roof_shade_south_east_production_ratio_kwh = esc_attr(get_option('wf_solar_roof_shade_south_east_production_ratio_kwh') );
+            if ($roof_shade_south_east_production_ratio_kwh == " ") {
+                $roof_direction_ratio_kwh = 0;
+            }else{
+                $roof_direction_ratio_kwh = $roof_shade_south_east_production_ratio_kwh/100;
             }
         }elseif("East" == $roof_direction){
             $roof_shade_east = esc_attr(get_option('wf_solar_roof_shade_east') );
@@ -1897,6 +1969,12 @@ class Front_Class
             }else{
                 $roof_direction_ratio = $roof_shade_east_production_ratio/100;
             }
+            $roof_shade_east_production_ratio_kwh = esc_attr(get_option('wf_solar_roof_shade_east_production_ratio_kwh') );
+            if ($roof_shade_east_production_ratio_kwh == " ") {
+                $roof_direction_ratio_kwh = 0;
+            }else{
+                $roof_direction_ratio_kwh = $roof_shade_east_production_ratio_kwh/100;
+            }
         }elseif("South_West" == $roof_direction){
             $roof_shade_south_west = esc_attr(get_option('wf_solar_roof_shade_south_west') );
             if ($roof_shade_south_west == " ") {
@@ -1909,6 +1987,12 @@ class Front_Class
                 $roof_direction_ratio = 0;
             }else{
                 $roof_direction_ratio = $roof_shade_south_west_production_ratio/100;
+            }
+            $roof_shade_south_west_production_ratio_kwh = esc_attr(get_option('wf_solar_roof_shade_south_west_production_ratio_kwh') );
+            if ($roof_shade_south_west_production_ratio_kwh == " ") {
+                $roof_direction_ratio_kwh = 0;
+            }else{
+                $roof_direction_ratio_kwh = $roof_shade_south_west_production_ratio_kwh/100;
             }
         }elseif("West" == $roof_direction){
             $roof_shade_west = esc_attr(get_option('wf_solar_roof_shade_west') );
@@ -1923,10 +2007,17 @@ class Front_Class
             }else{
                 $roof_direction_ratio = $roof_shade_west_production_ratio/100;
             }
+            $roof_shade_west_production_ratio_kwh = esc_attr(get_option('wf_solar_roof_shade_west_production_ratio_kwh') );
+            if ($roof_shade_west_production_ratio_kwh == " ") {
+                $roof_direction_ratio_kwh = 0;
+            }else{
+                $roof_direction_ratio_kwh = $roof_shade_west_production_ratio_kwh/100;
+            }
         }
 
         $coefficient_system_cost = esc_attr(get_option('wf_solar_coefficient_system_cost') );
         $d_rate_factor = esc_attr(get_option('wf_solar_d_rate_factor') );
+        $d_rate_factor_kwh = esc_attr(get_option('wf_solar_d_rate_factor_kwh') );
 
 
         $check_btn_click =trim($_GET["monthly_kwh"]);
@@ -1951,8 +2042,8 @@ class Front_Class
             $ak_x_rdv = $annual_kwh*$roof_direction_value;
             $ak_sv_rdv = $annual_kwh + $ak_x_sv + $ak_x_rdv;
             $ak_sv_rdv_x_ov = $ak_sv_rdv*$offset_value;
-            $system_size_kwh = $ak_sv_rdv_x_ov/365/4.5/$d_rate_factor;
-            $annual_production_calc = ($system_size_kwh*1000)*$roof_direction_ratio; //TODO: match line: 1945
+            $system_size_kwh = $ak_sv_rdv_x_ov/365/4.5/$d_rate_factor_kwh;
+            $annual_production_calc = ($system_size_kwh*1000)*$roof_direction_ratio_kwh; //TODO: match line: 1945
             $annual_production = number_format(ceil($annual_production_calc));
         }
         
