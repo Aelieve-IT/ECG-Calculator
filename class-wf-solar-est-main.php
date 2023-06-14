@@ -575,9 +575,9 @@ register_setting(
     'wf_solar_d_rate_factor_kwh'  //get_option name //TODO Possible Change Request DONE
 );
 
-function wf_d_rate_factor_callback() {
+function wf_d_rate_factor_kwh_callback() {
     ?>
-    <input type="number" step="any" class="d_rate_factor" name="wf_solar_d_rate_factor" value="<?php echo esc_attr(get_option('wf_solar_d_rate_factor') ); ?>" >
+    <input type="number" step="any" class="d_rate_factor_kwh" name="wf_solar_d_rate_factor_kwh" value="<?php echo esc_attr(get_option('wf_solar_d_rate_factor_kwh') ); ?>" >
     <p><?php echo esc_html__('Add the value of the KW Powerplant Size D Rate Factor', 'wf_image_api'); ?></p>
     <?php
 
@@ -856,6 +856,14 @@ register_setting(
             'wf_solar_roof_shade_south_production_ratio'  //get_option name
         );
 
+function wf_roof_shade_south_production_ratio_callback() {
+    ?>
+    <input type="number" step="any" class="roof_shade_south_production_ratio" name="wf_solar_roof_shade_south_production_ratio" value="<?php echo esc_attr(get_option('wf_solar_roof_shade_south_production_ratio') ); ?>" ><span><b> % </b></span>
+    <p><?php echo esc_html__('Used in Annual Production Calculation for Bill Entry Method (Annual Production = System Size x 1000 x Production Ratio)', 'wf_image_api'); ?></p>
+    <?php
+
+}
+
 add_settings_field(
             'wf_solar_roof_shade_south_production_ratio_kwh', //get_option name
             __( 'South Production Ratio (KW entry Method)', 'wf_image_api' ), //Field Label 
@@ -868,9 +876,9 @@ register_setting(
             'wf_solar_roof_shade_south_production_ratio_kwh'  //get_option name //TODO Possible Change Request DONE
         );
 
-function wf_roof_shade_south_production_ratio_callback() {
+function wf_roof_shade_south_production_ratio_kwh_callback() {
     ?>
-    <input type="number" step="any" class="roof_shade_south_production_ratio" name="wf_solar_roof_shade_south_production_ratio" value="<?php echo esc_attr(get_option('wf_solar_roof_shade_south_production_ratio') ); ?>" ><span><b> % </b></span>
+    <input type="number" step="any" class="roof_shade_south_production_ratio_kwh" name="wf_solar_roof_shade_south_production_ratio_kwh" value="<?php echo esc_attr(get_option('wf_solar_roof_shade_south_production_ratio_kwh') ); ?>" ><span><b> % </b></span>
     <p><?php echo esc_html__('Used in Annual Production Calculation for Bill Entry Method (Annual Production = System Size x 1000 x Production Ratio)', 'wf_image_api'); ?></p>
     <?php
 
@@ -888,6 +896,14 @@ register_setting(
             'wf_solar_roof_shade_south_east_production_ratio'  //get_option name
         );
 
+function wf_roof_shade_south_east_production_ratio_callback() {
+    ?>
+    <input type="number" step="any" class="roof_shade_south_east_production_ratio" name="wf_solar_roof_shade_south_east_production_ratio" value="<?php echo esc_attr(get_option('wf_solar_roof_shade_south_east_production_ratio') ); ?>" ><span><b> % </b></span>
+    <p><?php echo esc_html__('Used in Annual Production Calculation for Bill Entry Method (Annual Production = System Size x 1000 x Production Ratio)', 'wf_image_api'); ?></p>
+    <?php
+
+}
+
 add_settings_field(
             'wf_solar_roof_shade_south_east_production_ratio_kwh', //get_option name
             __( 'South East Production Ratio (KW entry Method)', 'wf_image_api' ), //Field Label 
@@ -900,9 +916,9 @@ register_setting(
             'wf_solar_roof_shade_south_east_production_ratio_kwh'  //get_option name //TODO Possible Change Request DONE
         );
 
-function wf_roof_shade_south_east_production_ratio_callback() {
+function wf_roof_shade_south_east_production_ratio_kwh_callback() {
     ?>
-    <input type="number" step="any" class="roof_shade_south_east_production_ratio" name="wf_solar_roof_shade_south_east_production_ratio" value="<?php echo esc_attr(get_option('wf_solar_roof_shade_south_east_production_ratio') ); ?>" ><span><b> % </b></span>
+    <input type="number" step="any" class="roof_shade_south_east_production_ratio_kwh" name="wf_solar_roof_shade_south_east_production_ratio_kwh" value="<?php echo esc_attr(get_option('wf_solar_roof_shade_south_east_production_ratio_kwh') ); ?>" ><span><b> % </b></span>
     <p><?php echo esc_html__('Used in Annual Production Calculation for Bill Entry Method (Annual Production = System Size x 1000 x Production Ratio)', 'wf_image_api'); ?></p>
     <?php
 
@@ -920,6 +936,14 @@ register_setting(
             'wf_solar_roof_shade_east_production_ratio'  //get_option name
         );
 
+function wf_roof_shade_east_production_ratio_callback() {
+    ?>
+    <input type="number" step="any" class="roof_shade_east_production_ratio" name="wf_solar_roof_shade_east_production_ratio" value="<?php echo esc_attr(get_option('wf_solar_roof_shade_east_production_ratio') ); ?>" ><span><b> % </b></span>
+    <p><?php echo esc_html__('Used in Annual Production Calculation for Bill Entry Method (Annual Production = System Size x 1000 x Production Ratio)', 'wf_image_api'); ?></p>
+    <?php
+
+}
+
 add_settings_field(
             'wf_solar_roof_shade_east_production_ratio_kwh', //get_option name
             __( 'East Production Ratio (KW entry Method)', 'wf_image_api' ), //Field Label 
@@ -932,9 +956,9 @@ register_setting(
             'wf_solar_roof_shade_east_production_ratio_kwh'  //get_option name //TODO Possible Change Request DONE
         );
 
-function wf_roof_shade_east_production_ratio_callback() {
+function wf_roof_shade_east_production_ratio_kwh_callback() {
     ?>
-    <input type="number" step="any" class="roof_shade_east_production_ratio" name="wf_solar_roof_shade_east_production_ratio" value="<?php echo esc_attr(get_option('wf_solar_roof_shade_east_production_ratio') ); ?>" ><span><b> % </b></span>
+    <input type="number" step="any" class="roof_shade_east_production_ratio_kwh" name="wf_solar_roof_shade_east_production_ratio_kwh" value="<?php echo esc_attr(get_option('wf_solar_roof_shade_east_production_ratio_kwh') ); ?>" ><span><b> % </b></span>
     <p><?php echo esc_html__('Used in Annual Production Calculation for Bill Entry Method (Annual Production = System Size x 1000 x Production Ratio)', 'wf_image_api'); ?></p>
     <?php
 
@@ -952,6 +976,13 @@ register_setting(
             'wf_solar_roof_shade_south_west_production_ratio'  //get_option name
         );
 
+function wf_roof_shade_south_west_production_ratio_callback() {
+    ?>
+    <input type="number" step="any" class="roof_shade_south_west_production_ratio" name="wf_solar_roof_shade_south_west_production_ratio" value="<?php echo esc_attr(get_option('wf_solar_roof_shade_south_west_production_ratio') ); ?>" ><span><b> % </b></span>
+    <p><?php echo esc_html__('Used in Annual Production Calculation for Bill Entry Method (Annual Production = System Size x 1000 x Production Ratio)', 'wf_image_api'); ?></p>
+    <?php
+
+}
 add_settings_field(
             'wf_solar_roof_shade_south_west_production_ratio_kwh', //get_option name
             __( 'South West Production Ratio (KW entry Method)', 'wf_image_api' ), //Field Label 
@@ -964,9 +995,9 @@ register_setting(
             'wf_solar_roof_shade_south_west_production_ratio_kwh'  //get_option name //TODO Possible Change Request DONE
         );
 
-function wf_roof_shade_south_west_production_ratio_callback() {
+function wf_roof_shade_south_west_production_ratio_kwh_callback() {
     ?>
-    <input type="number" step="any" class="roof_shade_south_west_production_ratio" name="wf_solar_roof_shade_south_west_production_ratio" value="<?php echo esc_attr(get_option('wf_solar_roof_shade_south_west_production_ratio') ); ?>" ><span><b> % </b></span>
+    <input type="number" step="any" class="roof_shade_south_west_production_ratio_kwh" name="wf_solar_roof_shade_south_west_production_ratio_kwh" value="<?php echo esc_attr(get_option('wf_solar_roof_shade_south_west_production_ratio_kwh') ); ?>" ><span><b> % </b></span>
     <p><?php echo esc_html__('Used in Annual Production Calculation for Bill Entry Method (Annual Production = System Size x 1000 x Production Ratio)', 'wf_image_api'); ?></p>
     <?php
 
@@ -984,6 +1015,13 @@ register_setting(
             'wf_solar_roof_shade_west_production_ratio'  //get_option name
         );
 
+function wf_roof_shade_west_production_ratio_callback() {
+    ?>
+    <input type="number" step="any" class="roof_shade_west_production_ratio" name="wf_solar_roof_shade_west_production_ratio" value="<?php echo esc_attr(get_option('wf_solar_roof_shade_west_production_ratio') ); ?>" ><span><b> % </b></span>
+    <p><?php echo esc_html__('Used in Annual Production Calculation for Bill Entry Method (Annual Production = System Size x 1000 x Production Ratio)', 'wf_image_api'); ?></p>
+    <?php
+
+}
 add_settings_field(
             'wf_solar_roof_shade_west_production_ratio_kwh', //get_option name
             __( 'West Production Ratio (KW entry Method)', 'wf_image_api' ), //Field Label
@@ -996,9 +1034,9 @@ register_setting(
             'wf_solar_roof_shade_west_production_ratio_kwh'  //get_option name //TODO Possible Change Request DONE
         );
 
-function wf_roof_shade_west_production_ratio_callback() {
+function wf_roof_shade_west_production_ratio_kwh_callback() {
     ?>
-    <input type="number" step="any" class="roof_shade_west_production_ratio" name="wf_solar_roof_shade_west_production_ratio" value="<?php echo esc_attr(get_option('wf_solar_roof_shade_west_production_ratio') ); ?>" ><span><b> % </b></span>
+    <input type="number" step="any" class="roof_shade_west_production_ratio_kwh" name="wf_solar_roof_shade_west_production_ratio_kwh" value="<?php echo esc_attr(get_option('wf_solar_roof_shade_west_production_ratio_kwh') ); ?>" ><span><b> % </b></span>
     <p><?php echo esc_html__('Used in Annual Production Calculation for Bill Entry Method (Annual Production = System Size x 1000 x Production Ratio)', 'wf_image_api'); ?></p>
     <?php
 
