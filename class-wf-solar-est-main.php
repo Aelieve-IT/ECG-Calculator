@@ -847,17 +847,17 @@ register_setting(
             'wf_solar_roof_shade_south_production_ratio'  //get_option name
         );
 
-add_settings_field(
-            'wf_solar_roof_shade_south_production_ratio_kwh', //get_option name
-            __( 'South Production Ratio (KW entry Method)', 'wf_image_api' ), //Field Label 
-            'wf_roof_shade_south_production_ratio_kwh_callback', //Field Callback //TODO Possible Change Request DONE
-            'wf_calculations_register_settings_section', //do_settings_sections
-            'wf_solar_calc' //page_name
-        );
-register_setting(
-            'wf_solar_calculations_page', //settings_fields 
-            'wf_solar_roof_shade_south_production_ratio_kwh'  //get_option name //TODO Possible Change Request DONE
-        );
+//add_settings_field(
+//            'wf_solar_roof_shade_south_production_ratio_kwh', //get_option name
+//            __( 'South Production Ratio (KW entry Method)', 'wf_image_api' ), //Field Label 
+//            'wf_roof_shade_south_production_ratio_kwh_callback', //Field Callback //TODO Possible Change Request DONE
+//            'wf_calculations_register_settings_section', //do_settings_sections
+//            'wf_solar_calc' //page_name
+//        );
+//register_setting(
+//            'wf_solar_calculations_page', //settings_fields 
+//            'wf_solar_roof_shade_south_production_ratio_kwh'  //get_option name //TODO Possible Change Request DONE
+//        );
 
 function wf_roof_shade_south_production_ratio_callback() {
     ?>
@@ -879,17 +879,17 @@ register_setting(
             'wf_solar_roof_shade_south_east_production_ratio'  //get_option name
         );
 
-add_settings_field(
-            'wf_solar_roof_shade_south_east_production_ratio_kwh', //get_option name
-            __( 'South East Production Ratio (KW entry Method)', 'wf_image_api' ), //Field Label 
-            'wf_roof_shade_south_east_production_ratio_kwh_callback', //Field Callback //TODO Possible Change Request DONE
-            'wf_calculations_register_settings_section', //do_settings_sections
-            'wf_solar_calc' //page_name
-        );
-register_setting(
-            'wf_solar_calculations_page', //settings_fields
-            'wf_solar_roof_shade_south_east_production_ratio_kwh'  //get_option name //TODO Possible Change Request DONE
-        );
+//add_settings_field(
+//            'wf_solar_roof_shade_south_east_production_ratio_kwh', //get_option name
+//            __( 'South East Production Ratio (KW entry Method)', 'wf_image_api' ), //Field Label 
+//            'wf_roof_shade_south_east_production_ratio_kwh_callback', //Field Callback //TODO Possible Change Request DONE
+//            'wf_calculations_register_settings_section', //do_settings_sections
+//            'wf_solar_calc' //page_name
+//        );
+//register_setting(
+//            'wf_solar_calculations_page', //settings_fields
+//            'wf_solar_roof_shade_south_east_production_ratio_kwh'  //get_option name //TODO Possible Change Request DONE
+//        );
 
 function wf_roof_shade_south_east_production_ratio_callback() {
     ?>
