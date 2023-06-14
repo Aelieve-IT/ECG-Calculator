@@ -554,17 +554,17 @@ register_setting(
             'wf_solar_d_rate_factor'  //get_option name
         );
 
-add_settings_field(
-            'wf_solar_d_rate_factor_kwh', //get_option name
-            __( 'KW Powerplant Size D Rate Factor (KW Entry Method)', 'wf_image_api' ), //Field Label 
-            'wf_d_rate_factor_kwh_callback', //Field Callback //TODO Possible Change Request DONE
-            'wf_calculations_register_settings_section', //do_settings_sections
-            'wf_solar_calc' //page_name
-        );
-register_setting(
-            'wf_solar_calculations_page', //settings_fields
-            'wf_solar_d_rate_factor_kwh'  //get_option name //TODO Possible Change Request DONE
-        );
+//add_settings_field(
+//            'wf_solar_d_rate_factor_kwh', //get_option name
+//            __( 'KW Powerplant Size D Rate Factor (KW Entry Method)', 'wf_image_api' ), //Field Label 
+//            'wf_d_rate_factor_kwh_callback', //Field Callback //TODO Possible Change Request DONE
+//            'wf_calculations_register_settings_section', //do_settings_sections
+//            'wf_solar_calc' //page_name
+//        );
+//register_setting(
+//            'wf_solar_calculations_page', //settings_fields
+//            'wf_solar_d_rate_factor_kwh'  //get_option name //TODO Possible Change Request DONE
+//        );
 
 function wf_d_rate_factor_callback() {
     ?>
@@ -911,17 +911,17 @@ register_setting(
             'wf_solar_roof_shade_east_production_ratio'  //get_option name
         );
 
-add_settings_field(
-            'wf_solar_roof_shade_east_production_ratio_kwh', //get_option name
-            __( 'East Production Ratio (KW entry Method)', 'wf_image_api' ), //Field Label 
-            'wf_roof_shade_east_production_ratio_kwh_callback', //Field Callback //TODO Possible Change Request DONE
-            'wf_calculations_register_settings_section', //do_settings_sections
-            'wf_solar_calc' //page_name
-        );
-register_setting(
-            'wf_solar_calculations_page', //settings_fields
-            'wf_solar_roof_shade_east_production_ratio_kwh'  //get_option name //TODO Possible Change Request DONE
-        );
+//add_settings_field(
+//            'wf_solar_roof_shade_east_production_ratio_kwh', //get_option name
+//            __( 'East Production Ratio (KW entry Method)', 'wf_image_api' ), //Field Label 
+//            'wf_roof_shade_east_production_ratio_kwh_callback', //Field Callback //TODO Possible Change Request DONE
+//            'wf_calculations_register_settings_section', //do_settings_sections
+//            'wf_solar_calc' //page_name
+//        );
+//register_setting(
+//            'wf_solar_calculations_page', //settings_fields
+//            'wf_solar_roof_shade_east_production_ratio_kwh'  //get_option name //TODO Possible Change Request DONE
+//        );
 
 function wf_roof_shade_east_production_ratio_callback() {
     ?>
@@ -943,17 +943,17 @@ register_setting(
             'wf_solar_roof_shade_south_west_production_ratio'  //get_option name
         );
 
-add_settings_field(
-            'wf_solar_roof_shade_south_west_production_ratio_kwh', //get_option name
-            __( 'South West Production Ratio (KW entry Method)', 'wf_image_api' ), //Field Label 
-            'wf_roof_shade_south_west_production_ratio_kwh_callback', //Field Callback //TODO Possible Change Request DONE
-            'wf_calculations_register_settings_section', //do_settings_sections
-            'wf_solar_calc' //page_name
-        );
-register_setting(
-            'wf_solar_calculations_page', //settings_fields
-            'wf_solar_roof_shade_south_west_production_ratio_kwh'  //get_option name //TODO Possible Change Request DONE
-        );
+//add_settings_field(
+//            'wf_solar_roof_shade_south_west_production_ratio_kwh', //get_option name
+//            __( 'South West Production Ratio (KW entry Method)', 'wf_image_api' ), //Field Label 
+//            'wf_roof_shade_south_west_production_ratio_kwh_callback', //Field Callback //TODO Possible Change Request DONE
+//            'wf_calculations_register_settings_section', //do_settings_sections
+//            'wf_solar_calc' //page_name
+//        );
+//register_setting(
+//            'wf_solar_calculations_page', //settings_fields
+//            'wf_solar_roof_shade_south_west_production_ratio_kwh'  //get_option name //TODO Possible Change Request DONE
+//        );
 
 function wf_roof_shade_south_west_production_ratio_callback() {
     ?>
@@ -975,17 +975,17 @@ register_setting(
             'wf_solar_roof_shade_west_production_ratio'  //get_option name
         );
 
-add_settings_field(
-            'wf_solar_roof_shade_west_production_ratio_kwh', //get_option name
-            __( 'West Production Ratio (KW entry Method)', 'wf_image_api' ), //Field Label
-            'wf_roof_shade_west_production_ratio_kwh_callback', //Field Callback //TODO Possible Change Request DONE
-            'wf_calculations_register_settings_section', //do_settings_sections
-            'wf_solar_calc' //page_name
-        );
-register_setting(
-            'wf_solar_calculations_page', //settings_fields
-            'wf_solar_roof_shade_west_production_ratio_kwh'  //get_option name //TODO Possible Change Request DONE
-        );
+//add_settings_field(
+//            'wf_solar_roof_shade_west_production_ratio_kwh', //get_option name
+//            __( 'West Production Ratio (KW entry Method)', 'wf_image_api' ), //Field Label
+//            'wf_roof_shade_west_production_ratio_kwh_callback', //Field Callback //TODO Possible Change Request DONE
+//            'wf_calculations_register_settings_section', //do_settings_sections
+//            'wf_solar_calc' //page_name
+//        );
+//register_setting(
+//            'wf_solar_calculations_page', //settings_fields
+//            'wf_solar_roof_shade_west_production_ratio_kwh'  //get_option name //TODO Possible Change Request DONE
+//        );
 
 function wf_roof_shade_west_production_ratio_callback() {
     ?>
