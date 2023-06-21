@@ -67,7 +67,7 @@ class Front_Class
         <style>
             #wf_est_googleMap_last{
                 height: 100% !important;
-                padding-bottom: 10%;
+                padding-bottom: 100%;
                 position: relative;
                 width: 100%;
             }
