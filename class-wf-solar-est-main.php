@@ -113,33 +113,33 @@ if ( ! class_exists( 'Wf_Solar_Est_Main' ) ) {
                 ?>
                 <label class="alig_items save_radio_val">
                   <input type="radio" class="radio_close" name="test" value="Ameren">
-                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/6.jpg')); ?>">
+                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/6.jpg')); ?>">
               </label>
               <label class="alig_items save_radio_val">
                   <input type="radio" class="radio_close" name="test" value="Illinois Power">
-                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/5.jpg')); ?>">
+                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/5.jpg')); ?>">
               </label>
               <label class="alig_items save_radio_val">
                   <input type="radio" class="radio_close" name="test" value="Champion Energy">
-                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/4.jpg')); ?>">
+                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/4.jpg')); ?>">
               </label>
               <label class="alig_items save_radio_val">
                   <input type="radio" class="radio_close" name="test" value="City Water Light & Power">
-                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/2.jpg')); ?>">
+                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/2.jpg')); ?>">
               </label>
               <label class="alig_items save_radio_val">
                   <input type="radio" class="radio_close" name="test" value="ComEd">
-                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/8.jpg')); ?>">
+                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/8.jpg')); ?>">
               </label>
           </div>
           <div class="display_items_next">  
             <label class="alig_items save_radio_val">
               <input type="radio" class="radio_close" name="test" value="Direct Energy">
-              <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/1.jpg')); ?>">
+              <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/1.jpg')); ?>">
           </label>
           <label class="alig_items save_radio_val">
               <input type="radio" class="radio_close" name="test" value="Other">
-              <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/other.png')); ?>">
+              <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/other.png')); ?>">
           </label>
       </div>
       <?php
@@ -148,15 +148,15 @@ if ( ! class_exists( 'Wf_Solar_Est_Main' ) ) {
     <div class="display_items"> 
         <label class="alig_items save_radio_val">
           <input type="radio" class="radio_close" name="test" value="Interstate Power and Light Company">
-          <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/10.jpg')); ?>">
+          <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/10.jpg')); ?>">
       </label>
       <label class="alig_items save_radio_val">
           <input type="radio" class="radio_close" name="test" value="MidAmerican Energy">
-          <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/7.jpg')); ?>">
+          <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/7.jpg')); ?>">
       </label>
       <label class="alig_items save_radio_val">
           <input type="radio" class="radio_close" name="test" value="Other">
-          <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/other.png')); ?>">
+          <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/other.png')); ?>">
       </label>
   </div>
   <div class="display_items"> 
@@ -165,33 +165,33 @@ if ( ! class_exists( 'Wf_Solar_Est_Main' ) ) {
     ?>
         <label class="alig_items save_radio_val">
                   <input type="radio" class="radio_close" name="test" value="Ameren">
-                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/6.jpg')); ?>">
+                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/6.jpg')); ?>">
               </label>
               <label class="alig_items save_radio_val">
                   <input type="radio" class="radio_close" name="test" value="Illinois Power">
-                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/5.jpg')); ?>">
+                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/5.jpg')); ?>">
               </label>
               <label class="alig_items save_radio_val">
                   <input type="radio" class="radio_close" name="test" value="Champion Energy">
-                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/4.jpg')); ?>">
+                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/4.jpg')); ?>">
               </label>
               <label class="alig_items save_radio_val">
                   <input type="radio" class="radio_close" name="test" value="City Water Light & Power">
-                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/2.jpg')); ?>">
+                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/2.jpg')); ?>">
               </label>
               <label class="alig_items save_radio_val">
                   <input type="radio" class="radio_close" name="test" value="ComEd">
-                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/8.jpg')); ?>">
+                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/8.jpg')); ?>">
               </label>
           </div>
           <div class="display_items_next">  
             <label class="alig_items save_radio_val">
               <input type="radio" class="radio_close" name="test" value="Direct Energy">
-              <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/1.jpg')); ?>">
+              <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/1.jpg')); ?>">
           </label>
           <label class="alig_items save_radio_val">
               <input type="radio" class="radio_close" name="test" value="Other">
-              <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/other.png')); ?>">
+              <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/other.png')); ?>">
           </label>
       </div>
       <div class="display_items"> 
@@ -200,33 +200,33 @@ if ( ! class_exists( 'Wf_Solar_Est_Main' ) ) {
     ?>
         <label class="alig_items save_radio_val">
                   <input type="radio" class="radio_close" name="test" value="Ameren">
-                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/6.jpg')); ?>">
+                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/6.jpg')); ?>">
               </label>
               <label class="alig_items save_radio_val">
                   <input type="radio" class="radio_close" name="test" value="Illinois Power">
-                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/5.jpg')); ?>">
+                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/5.jpg')); ?>">
               </label>
               <label class="alig_items save_radio_val">
                   <input type="radio" class="radio_close" name="test" value="Champion Energy">
-                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/4.jpg')); ?>">
+                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/4.jpg')); ?>">
               </label>
               <label class="alig_items save_radio_val">
                   <input type="radio" class="radio_close" name="test" value="City Water Light & Power">
-                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/2.jpg')); ?>">
+                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/2.jpg')); ?>">
               </label>
               <label class="alig_items save_radio_val">
                   <input type="radio" class="radio_close" name="test" value="ComEd">
-                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/8.jpg')); ?>">
+                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/8.jpg')); ?>">
               </label>
           </div>
           <div class="display_items_next">  
             <label class="alig_items save_radio_val">
               <input type="radio" class="radio_close" name="test" value="Direct Energy">
-              <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/1.jpg')); ?>">
+              <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/1.jpg')); ?>">
           </label>
           <label class="alig_items save_radio_val">
               <input type="radio" class="radio_close" name="test" value="Other">
-              <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/other.png')); ?>">
+              <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/other.png')); ?>">
           </label>
       </div>
       <div class="display_items"> 
@@ -235,33 +235,33 @@ if ( ! class_exists( 'Wf_Solar_Est_Main' ) ) {
     ?>
         <label class="alig_items save_radio_val">
                   <input type="radio" class="radio_close" name="test" value="Ameren">
-                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/6.jpg')); ?>">
+                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/6.jpg')); ?>">
               </label>
               <label class="alig_items save_radio_val">
                   <input type="radio" class="radio_close" name="test" value="Illinois Power">
-                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/5.jpg')); ?>">
+                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/5.jpg')); ?>">
               </label>
               <label class="alig_items save_radio_val">
                   <input type="radio" class="radio_close" name="test" value="Champion Energy">
-                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/4.jpg')); ?>">
+                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/4.jpg')); ?>">
               </label>
               <label class="alig_items save_radio_val">
                   <input type="radio" class="radio_close" name="test" value="City Water Light & Power">
-                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/2.jpg')); ?>">
+                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/2.jpg')); ?>">
               </label>
               <label class="alig_items save_radio_val">
                   <input type="radio" class="radio_close" name="test" value="ComEd">
-                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/8.jpg')); ?>">
+                  <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/8.jpg')); ?>">
               </label>
           </div>
           <div class="display_items_next">  
             <label class="alig_items save_radio_val">
               <input type="radio" class="radio_close" name="test" value="Direct Energy">
-              <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/1.jpg')); ?>">
+              <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/1.jpg')); ?>">
           </label>
           <label class="alig_items save_radio_val">
               <input type="radio" class="radio_close" name="test" value="Other">
-              <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/wolfiz-solar-estimator/includes/assets/images/other.png')); ?>">
+              <img width="170px !important" height="170px !important" src="<?php echo esc_url(plugins_url('/ECG-Calculator/includes/assets/images/other.png')); ?>">
           </label>
       </div>
       <div class="display_items"> 
