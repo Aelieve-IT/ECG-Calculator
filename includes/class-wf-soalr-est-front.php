@@ -7,14 +7,14 @@ class Front_Class
 
     function __construct()
     {
-        // $url = "https://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+        $url = "https://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 
         // Parse the URL to extract the GET parameters
-        // $parts = parse_url($url);
-        // $url_path = $parts['path'];
-        // if($url_path == "/solar-calculator-final-page/"){
-            // if(array_key_exists("query", $parts)){
-            // parse_str($parts['query'], $query);
+        $parts = parse_url($url);
+        $url_path = $parts['path'];
+        if($url_path == "/solar-calculator-final-page/"){
+            if(array_key_exists("query", $parts)){
+            parse_str($parts['query'], $query);
             add_shortcode('solar_install_map' , array($this , "wf_solar_install_map"));
         if(isset($_GET["state"])){
             //this is a comment
@@ -31,8 +31,8 @@ class Front_Class
             //add_shortcode('solar_system_cost' , array($this , "wf_solar_system_cost_next"));
             add_shortcode('solar_total_saving_return' , array($this , "wf_solar_total_saving_return"));
         }
-        // }
-        // }
+        }
+        }
 
         add_shortcode('solar_real_time_mwh' , array($this , "wf_solar_real_time_mwh"));
         add_shortcode('solar_real_time_Co2_offset' , array($this , "wf_solar_real_time_Co2_offset"));
@@ -64,7 +64,7 @@ class Front_Class
     public function wf_solar_install_map(){
         $auto_address = $_GET["autocomplete"];
         ?>
-      <!--   <style>
+        <style>
             #wf_est_googleMap_last{
                 width:550px;
                 height:550px;
@@ -76,7 +76,7 @@ class Front_Class
                     height:550px;
                 }
             }
-        </style> -->
+        </style> 
         <input type="hidden" id="get_address" name="get_address" value="<?php echo $auto_address; ?>">
         <div id="wf_est_googleMap_last"></div>
         <?php
