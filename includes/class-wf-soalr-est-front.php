@@ -66,8 +66,8 @@ class Front_Class
         ?>
         <style>
             #wf_est_googleMap_last{
-                width:440px;
-                height:440px;
+                width:100% !important;
+                height:100% !important;
             }
             @media only screen and (max-width: 768px) {
 
